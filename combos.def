@@ -1,0 +1,52 @@
+#include QMK_KEYBOARD_H
+#include "keymap.h"
+#include "combos/personal.def"
+#include "combos/shortcuts.def"
+#include "combos/steno.def"
+
+// Symbols map
+// Still very much a work in progress...
+//
+//    ~    (    )    $    ◌       ◌   !    [    ]    ^
+//    @    -         `    ◌       ◌   #         :    ;
+//    \    |    _    +    ◌       ◌   %    &    =    *
+//                   ◌    ◌       ◌   ◌
+
+// Left hand symbols
+COMB(at, KC_AT, THUMB_L, HOME_A)
+COMB(backslash, KC_BSLS, THUMB_L, KC_Z)
+COMB(dash, KC_MINS, THUMB_L, HOME_R)
+COMB(dollar, KC_DLR, THUMB_L, KC_P)
+COMB(grave, KC_GRV, THUMB_L, HOME_T)
+COMB(lparen, KC_LPRN, THUMB_L, KC_W)
+COMB(pipe, KC_PIPE, THUMB_L, KC_X)
+COMB(plus, KC_PLUS, THUMB_L, KC_D)
+COMB(rparen, KC_RPRN, THUMB_L, KC_F)
+COMB(tilde, KC_TILDE, THUMB_L, KC_Q)
+COMB(underscore, KC_UNDS, THUMB_L, KC_C)
+
+// Right hand symbols
+COMB(ampersand, KC_AMPR, THUMB_R, KC_COMM)
+COMB(asterix, KC_ASTR, THUMB_R, KC_SLSH)
+COMB(circumflex, KC_CIRC, THUMB_R, KC_QUOT)
+COMB(colon, KC_COLN, THUMB_R, HOME_I)
+COMB(equals, KC_EQL, THUMB_R, KC_DOT)
+COMB(exclamation, KC_EXLM, THUMB_R, KC_L)
+COMB(hash, KC_HASH, THUMB_R, HOME_N)
+COMB(lbracket, KC_LBRC, THUMB_R, KC_U)
+COMB(percent, KC_PERC, THUMB_R, KC_H)
+COMB(rbracket, KC_RBRC, THUMB_R, KC_Y)
+COMB(semicolon, KC_SCLN, THUMB_R, HOME_O)
+
+// Other keys
+COMB(delete, KC_DEL, THUMB_L, THUMB_R)
+COMB(enter, KC_ENTER, THUMB_L, HOME_R, HOME_S)
+COMB(escape, KC_ESC, THUMB_R, HOME_E, HOME_I)
+COMB(tab, KC_TAB, KC_W, KC_F)
+
+// Common patterns
+SUBS(brackets, "[] " SS_TAP(X_LEFT) SS_TAP(X_LEFT), THUMB_R, KC_Y, KC_U)
+SUBS(codefence, "``` ", THUMB_L, HOME_S, HOME_T)
+SUBS(doubledash, "--", THUMB_L, HOME_R, HOME_T)
+SUBS(parens, "() " SS_TAP(X_LEFT) SS_TAP(X_LEFT), THUMB_L, KC_W, KC_F)
+SUBS(shellcmd, "$()" SS_TAP(X_LEFT), THUMB_L, KC_P, KC_W, KC_F)

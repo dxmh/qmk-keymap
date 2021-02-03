@@ -1,0 +1,6 @@
+// Shortcuts
+COMB(chat, G(KC_N), KC_F, KC_P)
+COMB(cut, KC_CUT, KC_Z, KC_X)
+COMB(copy, KC_COPY, KC_X, KC_C)
+COMB(paste, KC_PASTE, KC_C, KC_D)
+COMB(undo, KC_UNDO, KC_Z, KC_D)
