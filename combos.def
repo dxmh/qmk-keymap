@@ -39,6 +39,8 @@ COMB(underscore, KC_UNDS, THUMB_R, HOME_E)
 // Other keys
 COMB(delete, KC_DEL, THUMB_L, THUMB_R)
 COMB(tab, KC_TAB, KC_W, KC_F)
+TOGG(mouseon, MOUSE, THUMB_L, CORNR_L)
+TOGG(mouseoff, MOUSE, KC_BTN1, KC_BTN2)
 
 // Common patterns
 SUBS(brackets, "[] " SS_TAP(X_LEFT) SS_TAP(X_LEFT), THUMB_R, KC_Y, KC_U)

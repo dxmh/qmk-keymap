@@ -23,4 +23,5 @@ enum layers {
     NUM,
     FN1,
     FN2,
+    MOUSE,
 };

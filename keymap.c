@@ -34,6 +34,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, _______, _______, _______, _______, _______, KC_F11,  KC_F12,  KC_F13,  _______,
                                _______, _______, _______, _______
   ),
+  [MOUSE] = LAYOUT(
+    XXXXXXX, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+    XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX, XXXXXXX, KC_LGUI, KC_LSFT, KC_LCTL, KC_LALT,
+    XXXXXXX, XXXXXXX, KC_WH_D, KC_WH_U, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+                               KC_BTN2, KC_BTN1, _______, _______
+  ),
 };
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
