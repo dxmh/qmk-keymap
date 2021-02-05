@@ -1,25 +1,18 @@
 #include QMK_KEYBOARD_H
-
 #include "keymap.h"
 #include "g/keymap_combo.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  [DEF] = LAYOUT(
+  [BASE] = LAYOUT(
     KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_QUOT,
-    HOME_A,  HOME_R,  HOME_S,  HOME_T,  KC_G,    KC_M,    HOME_N,  HOME_E,  HOME_I,  HOME_O,
+    HM_A,    HM_R,    HM_S,    HM_T,    KC_G,    KC_M,    HM_N,    HM_E,    HM_I,    HM_O,
     KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH,
-                               CORNR_L, THUMB_L, THUMB_R, CORNR_R
+                               LTHUMB2, LTHUMB1, RTHUMB1, RTHUMB2
   ),
-  [NAV] = LAYOUT(
-    XXXXXXX, KC_HOME, KC_UP,   KC_END,  RESET,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-    XXXXXXX, KC_LEFT, KC_DOWN, KC_RGHT, XXXXXXX, XXXXXXX, KC_LGUI, KC_LCTL, KC_LSFT, KC_LALT,
-    XXXXXXX, KC_PGUP, KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-                               _______, _______, _______, _______
-  ),
-  [NUM] = LAYOUT(
-    XXXXXXX, XXXXXXX, MO(FN2), MO(FN1), XXXXXXX, XXXXXXX, KC_7,    KC_8,    KC_9,    XXXXXXX,
-    KC_LALT, KC_LSFT, KC_LCTL, KC_LGUI, XXXXXXX, XXXXXXX, KC_4,    KC_5,    KC_6,    KC_0,
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_1,    KC_2,    KC_3,    XXXXXXX,
+  [RAISE] = LAYOUT(
+    XXXXXXX, KC_HOME, KC_UP,   KC_END,  RESET,   XXXXXXX, KC_7,    KC_8,    KC_9,    XXXXXXX,
+    HM_PNKY, HM_LEFT, HM_DOWN, HM_RGHT, MO(FN1), XXXXXXX, HM_4,    HM_5,    HM_6,    HM_0,
+    XXXXXXX, XXXXXXX, KC_PGDN, KC_PGUP, MO(FN2), XXXXXXX, KC_1,    KC_2,    KC_3,    XXXXXXX,
                                _______, _______, _______, _______
   ),
   [FN1] = LAYOUT(
@@ -44,10 +37,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    case CORNR_L:
-    case CORNR_R:
-    case THUMB_L:
-    case THUMB_R:
+    case LTHUMB1:
+    case LTHUMB2:
+    case RTHUMB1:
+    case RTHUMB2:
       return TAPPING_TERM - 75;
     default:
       return TAPPING_TERM;
