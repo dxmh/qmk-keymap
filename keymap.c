@@ -46,3 +46,19 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
       return TAPPING_TERM;
   }
 };
+
+// Allow certain tap-hold keys to repeat
+bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+  switch (keycode) {
+    case HM_LEFT:
+    case HM_DOWN:
+    case HM_RGHT:
+    case LTHUMB1:
+    case LTHUMB2:
+    case RTHUMB1:
+    case RTHUMB2:
+      return false;
+    default:
+      return true;
+  }
+}
