@@ -1,12 +1,12 @@
 #pragma once
 
-#define TAPPING_TERM 300
+#define TAPPING_TERM 250
 #define TAPPING_TERM_PER_KEY
 #define IGNORE_MOD_TAP_INTERRUPT
 #define TAPPING_FORCE_HOLD
 #define TAPPING_FORCE_HOLD_PER_KEY
 
-#define COMBO_TERM 70
+#define COMBO_TERM 60
 #define COMBO_VARIABLE_LEN
 
 #define MOUSEKEY_DELAY          0
