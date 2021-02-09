@@ -5,3 +5,9 @@ COMB(cut, KC_CUT, KC_Z, KC_X)
 COMB(copy, KC_COPY, KC_X, KC_C)
 COMB(paste, KC_PASTE, KC_C, KC_D)
 COMB(undo, KC_UNDO, KC_Z, KC_D)
+
+// VIM
+SUBS(vim_write, ":up\n", RTHUMB1, HM_I, KC_W)
+SUBS(vim_exit, ":x\n", RTHUMB1, HM_I, KC_X)
+SUBS(vim_quit, ":q\n", RTHUMB1, HM_I, KC_Q)
+SUBS(vim_explore, ":Ex\n", RTHUMB1, HM_I, HM_E)
