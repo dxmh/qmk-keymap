@@ -10,6 +10,13 @@ enum layers {
     MOUSE,
 };
 
+// Keycodes for use in macros
+enum custom_keycodes {
+  ALT_TAB = SAFE_RANGE,
+  SUPER_TAB,
+};
+
+
 // Thumb keys
 #define LTHUMB1 LT(RAISE, KC_SPC)
 #define LTHUMB2 MT(MOD_LSFT, KC_ESC)
