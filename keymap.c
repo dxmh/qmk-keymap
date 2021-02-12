@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "keymap.h"
+#include "sendstring_uk.h"
 #include "g/keymap_combo.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

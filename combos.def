@@ -11,17 +11,17 @@
 //                   ◌    ◌       ◌   ◌
 
 // Left hand symbols
-COMB(at, KC_AT, LTHUMB1, HM_A)
-COMB(backslash, KC_BSLS, LTHUMB1, KC_Z)
+COMB(at, UK_AT, LTHUMB1, HM_A)
+COMB(backslash, UK_BSLS, LTHUMB1, KC_Z)
 COMB(dash, KC_MINS, LTHUMB1, HM_S)
 COMB(dollar, KC_DLR, LTHUMB1, KC_P)
 COMB(grave, KC_GRV, LTHUMB1, HM_T)
 COMB(lparen, KC_LPRN, LTHUMB1, KC_W)
-COMB(pipe, KC_PIPE, LTHUMB1, KC_X)
+COMB(pipe, UK_PIPE, LTHUMB1, KC_X)
 COMB(plus, KC_PLUS, LTHUMB1, KC_C)
 COMB(rparen, KC_RPRN, LTHUMB1, KC_F)
 COMB(semicolon, KC_SCLN, LTHUMB1, HM_R)
-COMB(tilde, KC_TILDE, LTHUMB1, KC_Q)
+COMB(tilde, UK_TILD, LTHUMB1, KC_Q)
 
 // Right hand symbols
 COMB(ampersand, KC_AMPR, RTHUMB1, KC_DOT)
@@ -30,7 +30,7 @@ COMB(circumflex, KC_CIRC, RTHUMB1, KC_QUOT)
 COMB(colon, KC_COLN, RTHUMB1, HM_I)
 COMB(equals, KC_EQL, RTHUMB1, KC_COMM)
 COMB(exclamation, KC_EXLM, RTHUMB1, KC_L)
-COMB(hash, KC_HASH, RTHUMB1, HM_N)
+COMB(hash, UK_HASH, RTHUMB1, HM_N)
 COMB(lbracket, KC_LBRC, RTHUMB1, KC_U)
 COMB(percent, KC_PERC, RTHUMB1, KC_SLASH)
 COMB(rbracket, KC_RBRC, RTHUMB1, KC_Y)
