@@ -7,7 +7,9 @@ COMB(paste, KC_PASTE, KC_C, KC_D)
 COMB(undo, KC_UNDO, KC_Z, KC_D)
 
 // VIM
-SUBS(vim_write, ":up\n", RTHUMB1, HM_I, KC_W)
-SUBS(vim_exit, ":x\n", RTHUMB1, HM_I, KC_X)
-SUBS(vim_quit, ":q\n", RTHUMB1, HM_I, KC_Q)
-SUBS(vim_explore, ":Ex\n", RTHUMB1, HM_I, HM_E)
+// Each is an extension of the colon combo (on RTHUMB1, HM_I)
+SUBS(vim_write, ":up\n", RTHUMB1, HM_I, KC_W) // like :w
+SUBS(vim_exit, ":x\n", RTHUMB1, HM_I, KC_X) // like :x
+SUBS(vim_quit, ":q\n", RTHUMB1, HM_I, KC_Q) // like :q
+SUBS(vim_explore, ":E\n", RTHUMB1, HM_I, HM_S) // like "go up dir" in netrw
+SUBS(vim_select_buffer, ":ls\n:e#", RTHUMB1, HM_I, KC_F) // like :files
