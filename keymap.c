@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "capsword.c"
 #include "keymap.h"
 #include "sendstring_uk.h"
 #include "g/keymap_combo.h"
@@ -99,7 +100,16 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         unregister_code(KC_TAB);
       }
       break;
+    case CAPSWORD:
+      if (record->event.pressed) {
+        return false;
+      } else {
+        caps_word_toggle();
+        return false;
+      }
   }
+
+  process_caps_word(keycode, record);
   return true;
 }
 

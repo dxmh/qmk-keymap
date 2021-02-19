@@ -39,6 +39,7 @@ COMB(underscore, KC_UNDS, RTHUMB1, HM_E)
 // Other keys
 COMB(delete, KC_DEL, LTHUMB1, RTHUMB1)
 COMB(tab, KC_TAB, KC_W, KC_F)
+COMB(capsword, CAPSWORD, HM_R, HM_I)
 TOGG(mouseon, MOUSE, LTHUMB1, LTHUMB2)
 TOGG(mouseoff, MOUSE, KC_BTN1, KC_BTN2)
 

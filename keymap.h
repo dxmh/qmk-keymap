@@ -15,6 +15,7 @@ enum layers {
 enum custom_keycodes {
   ALT_TAB = SAFE_RANGE,
   SUPER_TAB,
+  CAPSWORD,
 };
 
 
