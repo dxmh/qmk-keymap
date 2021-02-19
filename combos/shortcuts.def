@@ -17,3 +17,4 @@ SUBS(vim_select_buffer, ":ls\n:e#", RTHUMB1, HM_I, KC_F) // like :files
 // Gnome shell
 SUBS(workspace_up, SS_LCTL(SS_LGUI(SS_TAP(X_UP))), HM_R, HM_S, HM_T)
 SUBS(workspace_down, SS_LCTL(SS_LGUI(SS_TAP(X_DOWN))), HM_I, HM_E, HM_N)
+COMB(push_to_talk, G(UK_BSLS), KC_X, KC_C, KC_D)
