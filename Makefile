@@ -1,6 +1,6 @@
 keyboard = ferris/sweep
 keymap = hxy
-side = left
+side = right
 bootloader = avrdude-split-${side}
 
 compile:
