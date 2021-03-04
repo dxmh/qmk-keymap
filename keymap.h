@@ -30,9 +30,9 @@ enum custom_keycodes {
 #define HM_R LSFT_T(KC_R)
 #define HM_S LCTL_T(KC_S)
 #define HM_T LGUI_T(KC_T)
-#define HM_N RGUI_T(KC_N)
-#define HM_E RCTL_T(KC_E)
-#define HM_I RSFT_T(KC_I)
+#define HM_N LGUI_T(KC_N)
+#define HM_E LCTL_T(KC_E)
+#define HM_I LSFT_T(KC_I)
 #define HM_O LALT_T(KC_O)
 
 // RAISE home row modifiers
@@ -40,7 +40,7 @@ enum custom_keycodes {
 #define HM_LEFT LSFT_T(KC_LEFT)
 #define HM_DOWN LCTL_T(KC_DOWN)
 #define HM_RGHT LGUI_T(KC_RIGHT)
-#define HM_4 RGUI_T(KC_4)
-#define HM_5 RCTL_T(KC_5)
-#define HM_6 RSFT_T(KC_6)
+#define HM_4 LGUI_T(KC_4)
+#define HM_5 LCTL_T(KC_5)
+#define HM_6 LSFT_T(KC_6)
 #define HM_0 LALT_T(KC_0)
