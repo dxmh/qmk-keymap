@@ -3,6 +3,7 @@
 #include "combos/personal.def"
 #include "combos/shortcuts.def"
 #include "combos/steno.def"
+#include "combos/text.def"
 
 // Symbols map
 //    ~    (    )    $    ◌       ◌   !    [    ]    ^
