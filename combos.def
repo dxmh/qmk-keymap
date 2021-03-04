@@ -45,10 +45,10 @@ TOGG(mouseon, MOUSE, LTHUMB1, LTHUMB2)
 TOGG(mouseoff, MOUSE, KC_BTN1, KC_BTN2)
 
 // Common patterns
-SUBS(brackets, "[] " SS_TAP(X_LEFT) SS_TAP(X_LEFT), RTHUMB1, KC_Y, KC_U)
-SUBS(codefence, "``` ", LTHUMB1, HM_S, HM_T)
+SUBS(brackets, "[]" SS_TAP(X_LEFT), RTHUMB1, KC_Y, KC_U)
+SUBS(codefence, "```", LTHUMB1, HM_S, HM_T)
 SUBS(doubledash, "--", LTHUMB1, HM_R, HM_S)
 SUBS(doublepipe, "|| ", LTHUMB1, KC_X, KC_C)
 SUBS(doubleamp, "&& ", RTHUMB1, KC_COMM, KC_DOT)
-SUBS(parens, "() " SS_TAP(X_LEFT) SS_TAP(X_LEFT), LTHUMB1, KC_W, KC_F)
+SUBS(parens, "()" SS_TAP(X_LEFT), LTHUMB1, KC_W, KC_F)
 SUBS(shellcmd, "$()" SS_TAP(X_LEFT), LTHUMB1, KC_P, KC_W, KC_F)
