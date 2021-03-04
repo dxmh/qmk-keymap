@@ -1,6 +1,5 @@
 // Shortcuts
-COMB(prev_window, ALT_TAB, KC_F, KC_P)
-COMB(prev_app, SUPER_TAB, KC_W, KC_F, KC_P)
+COMB(prev_window, A(KC_TAB), KC_F, KC_P)
 COMB(cut, KC_CUT, KC_Z, KC_X)
 COMB(copy, KC_COPY, KC_X, KC_C)
 COMB(paste, KC_PASTE, KC_C, KC_D)

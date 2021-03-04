@@ -94,41 +94,8 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
   }
 }
 
-// Super ALT↯TAB
-// https://beta.docs.qmk.fm/using-qmk/advanced-keycodes/feature_macros#super-alt-tab
-
-bool is_alt_tab_active = false;
-uint16_t alt_tab_timer = 0;
-
-bool is_super_tab_active = false;
-uint16_t super_tab_timer = 0;
-
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-    case ALT_TAB:
-      if (record->event.pressed) {
-        if (!is_alt_tab_active) {
-          is_alt_tab_active = true;
-          register_code(KC_LALT);
-        }
-        alt_tab_timer = timer_read();
-        register_code(KC_ESC);
-      } else {
-        unregister_code(KC_ESC);
-      }
-      break;
-    case SUPER_TAB:
-      if (record->event.pressed) {
-        if (!is_super_tab_active) {
-          is_super_tab_active = true;
-          register_code(KC_LGUI);
-        }
-        super_tab_timer = timer_read();
-        register_code(KC_TAB);
-      } else {
-        unregister_code(KC_TAB);
-      }
-      break;
     case CAPSWORD:
       if (record->event.pressed) {
         return false;
@@ -137,22 +104,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         return false;
       }
   }
-
   process_caps_word(keycode, record);
   return true;
-}
-
-void matrix_scan_user(void) {
-  if (is_alt_tab_active) {
-    if (timer_elapsed(alt_tab_timer) > 450) {
-      unregister_code(KC_LALT);
-      is_alt_tab_active = false;
-    }
-  }
-  if (is_super_tab_active) {
-    if (timer_elapsed(super_tab_timer) > 450) {
-      unregister_code(KC_LGUI);
-      is_super_tab_active = false;
-    }
-  }
 }
