@@ -12,7 +12,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                LTHUMB2, LTHUMB1, RTHUMB1, RTHUMB2
   ),
   [RAISE] = LAYOUT(
-    XXXXXXX, KC_HOME, KC_UP,   KC_END,  RESET,   XXXXXXX, KC_7,    KC_8,    KC_9,    XXXXXXX,
+    XXXXXXX, KC_HOME, KC_UP,   KC_END,  XXXXXXX, XXXXXXX, KC_7,    KC_8,    KC_9,    XXXXXXX,
     HM_PNKY, HM_LEFT, HM_DOWN, HM_RGHT, MO(FN1), XXXXXXX, HM_4,    HM_5,    HM_6,    HM_0,
     XXXXXXX, XXXXXXX, KC_PGDN, KC_PGUP, MO(FN2), XXXXXXX, KC_1,    KC_2,    KC_3,    XXXXXXX,
                                _______, _______, _______, _______

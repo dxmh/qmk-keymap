@@ -5,6 +5,7 @@ COMB(cut, KC_CUT, KC_Z, KC_X)
 COMB(copy, KC_COPY, KC_X, KC_C)
 COMB(paste, KC_PASTE, KC_C, KC_D)
 COMB(undo, KC_UNDO, KC_Z, KC_D)
+COMB(reset, RESET, KC_Z, KC_X, KC_C, KC_D, KC_L, KC_U, KC_Y, KC_QUOT)
 
 // VIM
 // Each is an extension of the colon combo (on RTHUMB1, HM_I)
