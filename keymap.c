@@ -37,6 +37,35 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 };
 
+
+// Specify combos that must be held for the duration of COMBO_TERM before
+// triggering (to prevent misfires when typing quickly):
+bool get_combo_must_hold(uint16_t index, combo_t *combo) {
+    switch (index) {
+        case paste:
+            return true;
+    }
+    return false;
+}
+
+// Tune timings for combos
+uint16_t get_combo_term(uint16_t index, combo_t *combo) {
+  switch(index) {
+    case paste:
+      return 30; // tune the COMBO_MUST_HOLD
+    case push_to_talk:
+    case fullscreen:
+    case overview:
+    case quit:
+    case word_back:
+    case word_forward:
+      return 100; // give myself more time for these ones
+    default:
+      return COMBO_TERM;
+  }
+}
+
+// Tune timings for tap/hold keys
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case LTHUMB1:
