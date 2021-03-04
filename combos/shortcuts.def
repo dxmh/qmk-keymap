@@ -14,7 +14,17 @@ SUBS(vim_quit, ":q\n", RTHUMB1, HM_I, KC_Q) // like :q
 SUBS(vim_explore, ":E\n", RTHUMB1, HM_I, HM_S) // like "go up dir" in netrw
 SUBS(vim_select_buffer, ":ls\n:e#", RTHUMB1, HM_I, KC_F) // like :files
 
+// Linux
+SUBS(sudo, "sudo ", RTHUMB1, HM_S, KC_U)
+SUBS(sudo_i, "sudo -i\n", RTHUMB1, HM_S, KC_U, HM_I)
+SUBS(systemctl, "systemctl ", RTHUMB1, HM_S, HM_T)
+SUBS(journalctl, "journalctl ", RTHUMB1, KC_J, HM_T)
+SUBS(dir_www, "/var/www/", KC_SLSH, KC_W)
+SUBS(dir_log, "/var/log/", KC_SLSH, KC_L)
+SUBS(dir_etc, "/etc/", KC_SLSH, HM_E)
+
 // Gnome shell
-SUBS(workspace_up, SS_LCTL(SS_LGUI(SS_TAP(X_UP))), HM_R, HM_S, HM_T)
-SUBS(workspace_down, SS_LCTL(SS_LGUI(SS_TAP(X_DOWN))), HM_I, HM_E, HM_N)
-COMB(push_to_talk, G(UK_BSLS), KC_X, KC_C, KC_D)
+COMB(push_to_talk, G(UK_BSLS), KC_W, KC_P)
+COMB(quit, G(KC_Q), KC_X, KC_C, KC_D)
+COMB(overview, G(KC_SPACE), HM_R, HM_S, HM_T)
+COMB(fullscreen, G(KC_F), KC_W, KC_F, KC_P)
