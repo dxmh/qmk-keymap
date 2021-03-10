@@ -41,11 +41,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Specify combos that must be held for the duration of COMBO_TERM before
 // triggering (to prevent misfires when typing quickly):
 bool get_combo_must_hold(uint16_t index, combo_t *combo) {
-    switch (index) {
-        case paste:
-            return true;
-    }
-    return false;
+  switch (index) {
+    case paste:
+      return true;
+  }
+  return false;
 }
 
 // Tune timings for combos

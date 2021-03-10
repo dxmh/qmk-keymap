@@ -4,11 +4,11 @@
 
 // Friendly layer names
 enum layers {
-    BASE,
-    RAISE,
-    FN1,
-    FN2,
-    MOUSE,
+  BASE,
+  RAISE,
+  FN1,
+  FN2,
+  MOUSE,
 };
 
 // Keycodes for use in macros
@@ -17,7 +17,6 @@ enum custom_keycodes {
   SUPER_TAB,
   CAPSWORD,
 };
-
 
 // Thumb keys
 #define LTHUMB1 LT(RAISE, KC_SPC)
