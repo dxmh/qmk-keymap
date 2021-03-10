@@ -5,7 +5,8 @@
 // Friendly layer names
 enum layers {
   BASE,
-  RAISE,
+  NUM,
+  NAV,
   FN1,
   FN2,
   MOUSE,
@@ -17,9 +18,9 @@ enum custom_keycodes {
 };
 
 // Thumb keys
-#define LTHUMB1 LT(RAISE, KC_SPC)
+#define LTHUMB1 LT(NUM, KC_SPC)
 #define LTHUMB2 MT(MOD_LSFT, KC_ESC)
-#define RTHUMB1 LT(RAISE, KC_BSPC)
+#define RTHUMB1 LT(NAV, KC_BSPC)
 #define RTHUMB2 MT(MOD_RSFT, KC_ENT)
 
 // BASE home row modifiers
@@ -32,7 +33,7 @@ enum custom_keycodes {
 #define HM_I LSFT_T(KC_I)
 #define HM_O LALT_T(KC_O)
 
-// RAISE home row modifiers
+// Home row modifiers in layers
 #define HM_PNKY KC_LALT
 #define HM_LEFT LSFT_T(KC_LEFT)
 #define HM_DOWN LCTL_T(KC_DOWN)
